@@ -4,8 +4,8 @@ import { puttingUser, getAllUsers, authUser } from "./controllers";
 
 const router = Router();
 
-//POST: {UserName, passwd, email}
-router.route("/getUser").post(puttingUser);
+//POST: {UserName, passwd, email} this will add the user
+router.route("/addUser").post(puttingUser);
 
 //to get all users
 router.route("/getAllUsers").get(getAllUsers);
